@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Red+Hat+Display:wght@300&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,.footer{
+    background-color: #3498DB;
+    font-family: "Red Hat Display", sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header{
+    font-size: 2rem;
+}
+.main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar{
+    background: #1A8072;
+    color: white;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.text{
+    color: #eee;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+}
+
+.amount_holder{
+    font-size: 2rem;
+
+}
+
+.form{
+    background-color: #ECF0F1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form p{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+label, input {
+    display: block;
+    padding: 5px 10px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #1A8072;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #3498DB;
+}
+
+p.heading{
+    margin: 10px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    margin: 5px 0;
+}
+
+.income {
+    background-color: #2ECC71;
+}
+
+.expense{
+    background-color: #FF0054;
+}
+
+.right_side {
+    display: flex;
+    gap: 5px;
+}
+
+.right_side button {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.right_side button:hover{
+    color: #3498DB;
+    cursor: pointer;
+}

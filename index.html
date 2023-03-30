@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker - JS app</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="header">
+        <p>My Income / Expense Tracker</p>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="topbar">
+                <p class="text">Your Current Balance</p>
+                <p class="amount_holder">
+                    <span id="currency">PKR</span>
+                    <span id="balance">100000</span>
+                </p>
+            </div>
+            <div class="form">
+                    <p>Add Transaction</p>
+                <div class="form-control">
+                    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-control">
+                    
+                    <label for="type">Type</label>
+                    <div class="radio">
+                        <input type="radio" name="type" id="income">
+                        <label for="radio">Income</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="type" id="expense">
+                        <label for="radio">Expense</label>
+                    </div>
+                    
+                </div>
+                <div class="form-control">
+                    
+                    <label for="amount">Amount</label>
+                    <input type="number" name="amount" id="amount" placeholder="Enter Amount here">
+                </div>
+
+                <button class="btn">Save Transaction</button>
+            </div>
+            <p class="heading">Transaction List:</p>
+
+            <ul id="list_of_transactions">
+                <li class="transaction income">
+                    <p>Income1</p>
+                    <div class="right_side">
+                        <p>300 PKR</p>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </li>
+                <li class="transaction expense">
+                    <p>Expense1</p>
+                    <div class="right_side">
+                        <p>100 PKR</p>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <h3>Developed by Sami Bhojani</h3>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
